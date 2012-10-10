@@ -20,16 +20,49 @@ You can then do so :
 
 ```html
 
-<li>
-	<h3> {{someTitle}} </h3>
-	<ul>
-		<div data-role="header" data-position="fixed">
-			<a href="#" data-icon="back" data-rel="back" data-icon="back">Back</a>
-			<h1> {{someTitle}} </h1> 
-			<a href="#" onclick="publishStory()" data-icon="custom">Share</a>
-		</div>
-		<li>{{someContent}}</li>
-	</ul>
-</li>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Demo</title>
+   
+    <link rel="stylesheet" href="jquery.mobile-1.1.1.min.css"/>
+    <link rel="stylesheet" href="jquery.mobile.iscrollview.css"/>
+    <link rel="stylesheet" href="jquery.mobile.iscrollview-pull.css"/>
+    <link rel="stylesheet" href="additional-site-specific-styles.css"/>
+    
+    <script src="jquery-1.7.1.min.js"></script>
+    <script src="jquery.mobile-1.1.1.min.js"></script>
+    <script src="iscroll.js"></script>
+    <script src="jquery.mobile.iscrollview.js"></script>
+    <script src="additional-site-specific-scripts.js"></script>
+  </head>
 
+  <body>
+    <div data-role="page" id="index-page">
+    
+      <div data-role="header" data-position="fixed" data-tap-toggle="false">
+        <h1>INDEX PAGE</h1>
+      </div>
+      
+      <div data-role="content" class="example-wrapper" data-iscroll>
+        <p>some content that will be scrolled</p>
+        <p>Some more content that will be scrolled</p>
+        <ul data-role="listview">
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ul>
+        <p>Even more content. It will scroll whatever is in the data-iscroll div.</p>
+      </div>
+      
+      <div data-role="footer" data-position="fixed" data-tap-toggle="false">
+        <h1>My Footer</h1>
+      </div>
+      
+    </div>
+  </body>
+</html>
 ```
