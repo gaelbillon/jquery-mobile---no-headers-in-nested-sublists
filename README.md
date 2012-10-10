@@ -19,6 +19,7 @@ This can be useful if you manage your nested lists with a templating engine (mus
 You can then do so : 
 
 ```html
+
 <li>
 	<h3> {{someTitle}} </h3>
 	<ul>
@@ -30,4 +31,5 @@ You can then do so :
 		<li>{{someContent}}</li>
 	</ul>
 </li>
+
 ```
