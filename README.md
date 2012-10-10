@@ -18,6 +18,7 @@ And add this attribute to the nested lists where you don't want a header
 This can be useful if you manage your nested lists with a templating engine (mustache, handlebars, underscore, etc).
 You can then do so : 
 
+```html
 <li>
 	<h3> {{someTitle}} </h3>
 	<ul>
@@ -29,3 +30,4 @@ You can then do so :
 		<li>{{someContent}}</li>
 	</ul>
 </li>
+```
