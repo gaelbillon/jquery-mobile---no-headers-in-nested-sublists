@@ -4,14 +4,14 @@ This was created to be able to add a custom header in nestedlists with a share b
 
 Load this file after jquery mobile
 
-<script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
-<script src="javascript/jquery.mobile.nested-listview-noheaders.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+    <script src="javascript/jquery.mobile.nested-listview-noheaders.js"></script>
 
 
 
 And add this attribute to the nested lists where you don't want a header
 
-<ul data-role="listview" data-noheaders="true">
+    <ul data-role="listview" data-noheaders="true">
 
 
 
